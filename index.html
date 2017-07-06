@@ -1,0 +1,138 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>zJuan</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/jQ.js"></script>
+   
+    <style>
+        #main-panel{
+            margin: 20px;
+        }
+        #design-select{
+            background: grey;
+            background: hsl(0, 0%, 98%);
+            text-align: center;
+        }
+        #design-area{
+            margin-left: 20px;
+        }
+        #design-image{
+          width: 50%;
+          margin: 0 auto;
+          text-align: center;
+        }
+        #design-thumbnail{
+          margin-top: 25%;
+        }
+    </style>
+</head>
+
+<body>
+
+<script type="text/javascript">
+  $( function() {
+    $( ".is-child" ).draggable();
+  } );
+</script>
+
+<section class="hero is-info">
+  <div class="hero-head">
+    <header class="nav">
+      <div class="container">
+        <div class="nav-right nav-menu">
+          <a class="nav-item is-active">
+            Home
+          </a>
+          <a class="nav-item">
+            About
+          </a>
+          <a class="nav-item">
+            Products
+          </a>
+          <span class="nav-item">
+            <a class="button is-primary is-inverted">
+              Button
+            </a>
+          </span>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Taco's
+      </h1>
+      <h2 class="subtitle">
+        Website
+      </h2>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <nav class="tabs is-boxed">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a>Overview</a></li>
+          <li><a>tabA</a></li>
+          <li><a>tabB</a></li>
+          <li><a>tabC</a></li>
+          <li><a>tabD</a></li>
+          <li><a>tabE</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="containter">
+    <div class="tile is-ancestor" id="main-panel">
+        <div class="tile is-parent is-vertical is-1 box">
+          <div class="tile is-child box" id="design-select">
+              <figure class="image">
+                  <span class="icon is-large">
+                      <i class="fa fa-home"></i>
+                  </span>
+              </figure>
+          </div>
+          <div class="tile is-child box" id="design-select">
+              <figure class="image">
+                  <span class="icon is-large">
+                      <i class="fa fa-home"></i>
+                  </span>
+              </figure>
+          </div>
+          <div class="tile is-child box" id="design-select">
+              <figure class="image">
+                  <span class="icon is-large">
+                      <i class="fa fa-home"></i>
+                  </span>
+              </figure>
+          </div>
+          <div class="tile is-child box" id="design-select">
+              <figure class="image">
+                  <span class="icon is-large">
+                      <i class="fa fa-home"></i>
+                  </span>
+              </figure>
+          </div>
+        </div>
+    
+        <div class="tile box" id="design-area">
+            <div class="box" id="design-image" style="background: cyan;">
+              <figure class="image" id="design-thumbnail">
+                  <!---->
+              </figure>
+          </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
